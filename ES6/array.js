@@ -7,9 +7,6 @@
 // -unshift : adds one or more elements to the beginning of an array
 // -splice : adds or removes elements from an array
 // -slice : extracts a section of an array and returns a new array
-// -loop : loops through the elements of an array
-// -search : searches an array for an element and returns its position
-// -sort : sorts the elements of an array
 
 // join
 const data = [1, 2, 3, 4, 5]
@@ -47,13 +44,11 @@ console.log(data3); // [11,13,14]
 data3.unshift(12)
 console.log(data3); // [12,11,13,14]
 
-// splice
+// splice ลบ/เพิ่มข้อมูล(ตำแหน่ง, จำนวนที่จะลบ, ข้อมูลที่จะแทรก)
 const data4 = [1, 2, 3, 4, 5]
 data4.splice(1, 3, 999) // 1 = index, 3 = number of elements to remove, 999 = element insertions
 console.log(data4); // [1,999,5]
 
-// slice
+// slice ดึงข้อมูล(ตำแหน่งเริ่มต้น, ตำแหน่งสุดท้าย-1)
 const data5 = [6, 7, 8, 9, 10]
 console.log(data5.slice(1, 3)); // [7,8]
-
-// 2:24:00
